@@ -19,7 +19,7 @@ public class Main {
 
         assertConditionB();
 
-        System.out.println(sum(2_147_483_647, 2));
+        System.out.println(sum(2_147_483_647, 1));
 
         happyNY();
 
@@ -40,7 +40,7 @@ public class Main {
      */
     public static void assertConditionA() {
         String[] weekends = {"Суббота", "Воскресенье"};
-        assert weekends.length == 3;
+        assert weekends.length == 2;
         System.out.println("В неделе " + weekends.length + " дня выходных");
     }
 
@@ -63,6 +63,7 @@ public class Main {
      * @apiNote assert boolean_выражение : сообщение_об_ошибке;
      */
     public static int sum(int a, int b) {
+        assert Integer.MAX_VALUE - a - b > 0;
         return a + b;
     }
 
