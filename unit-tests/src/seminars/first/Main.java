@@ -15,19 +15,19 @@ public class Main {
 
 
     public static void main(String[] args) {
-        assertConditionA();
+//        assertConditionA();
 
-        assertConditionB();
+//        assertConditionB();
 
-        System.out.println(sum(2_147_483_647, 1));
+//        System.out.println(sum(2_147_483_647, 1));
 
-        happyNY();
+//        happyNY();
 
-        expectedValue();
+//        expectedValue();
 
-        checkingShoppingCart();
+//        checkingShoppingCart();
 
-        String[] colors = {"...", "...",};
+        String[] colors = {"aqua", "green","violet", "orange","yellow", "blue","gold"};
         testingJavaCollectionsAssertJ(colors);
 
         List<String> heroBag = Arrays.asList("Bow", "Axe", "Gold");
@@ -90,6 +90,7 @@ public class Main {
         productCategories.add("fruits");
         productCategories.add("vegetables");
         productCategories.add("bakery");
+        productCategories.add("liquid");
 
         ArrayList<String> products = new ArrayList<>();
         products.add("apple");
@@ -104,7 +105,9 @@ public class Main {
                 System.out.println("category: " + productCategories.get(1));
             } else if (product.equals("bread")) {
                 System.out.println("category: " + productCategories.get(2));
-            } else {
+            } else if (product.equals("water")) {
+                System.out.println("category: " + productCategories.get(3));
+            }else {
                 assert false : "Unknown category for the product " + product;
             }
         }
@@ -114,7 +117,7 @@ public class Main {
      * 6) Найдите ошибку
      */
     public static void expectedValue() {
-        assertThat(5).isEqualTo(sum(2, 3));
+        assertThat(sum(2, 3)).isEqualTo(5);
     }
 
     /**
