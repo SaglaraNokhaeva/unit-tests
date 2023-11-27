@@ -72,6 +72,7 @@ public class Main {
      * windows fail - https://habr.com/ru/company/pvs-studio/blog/698404/
      */
     public static void happyNY() {
+
         Calendar calendar = Calendar.getInstance();
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         String currentDateTime = dateFormat.format(calendar.getTime());
