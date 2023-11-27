@@ -146,6 +146,7 @@ public class Main {
      * 5. Проверить, что герой это человек (свойство isHuman)<p>
      */
     public static void checkingHero(Hero hero) {
+
     }
 
 }
