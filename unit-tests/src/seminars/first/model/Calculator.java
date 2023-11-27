@@ -56,6 +56,7 @@ public class Calculator {
         if (discountAmount > 100|discountAmount < 0) {
             throw new ArithmeticException("The discount should be in the range from 0 to 100%");
         }
-        return purchaseAmount-(discountAmount/100)*purchaseAmount;
+        double a = purchaseAmount-(discountAmount/100.0)*purchaseAmount;
+        return a;
     }
 }

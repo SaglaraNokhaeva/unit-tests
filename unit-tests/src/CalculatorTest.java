@@ -58,7 +58,9 @@ public class CalculatorTest {
 //        использованием библиотеки AssertJ. Если метод calculateDiscount получает недопустимые
 //        аргументы, он должен выбрасывать исключение ArithmeticException. Не забудьте написать
 //        тесты для проверки этого поведения.
+        System.out.println(Calculator.calculatingDiscount(100,20));
         assertThat(Calculator.calculatingDiscount(100,20)).isEqualTo(80);
+//        assertThat(Calculator.calculatingDiscount(100,50)).isEqualTo(40);
 
 
 
