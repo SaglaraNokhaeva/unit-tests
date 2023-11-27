@@ -2,8 +2,17 @@
   <library name="assertj-core-3.23.1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/unit-tests/libs/assertj-core-3.23.1.jar!/" />
+      <root url="file://$PROJECT_DIR$/unit-tests/libs" />
+      <root url="file://$PROJECT_DIR$/.." />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../unit-tests-1(Код семинара)/unit-tests-1(Код семинара)/src" />
+      <root url="file://$PROJECT_DIR$/unit-tests/src" />
+    </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$/out/production/unit-tests/seminars/first/model" />
+    </excluded>
+    <jarDirectory url="file://$PROJECT_DIR$/unit-tests/libs" recursive="false" />
   </library>
 </component>
